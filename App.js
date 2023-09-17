@@ -38,11 +38,11 @@ function App() {
     // </SafeAreaView>
 
     <SafeAreaView style={{ flex: 1 }}>
-      <View style={styles.main}>
-        <Home prop={styles.header} />
+      {/* <View style={styles.main}>
+        <Home prop={styles.header} /> */}
         <Body prop={styles.body} />
-        <Footer prop={styles.footer} />
-      </View>
+        {/* <Footer prop={styles.footer} /> */}
+      {/* </View> */}
     </SafeAreaView>
 
 
