@@ -2,7 +2,8 @@ import axios from "axios"
 import React, { useEffect, useState } from 'react'
 import { View, FlatList, StyleSheet } from 'react-native'
 import { ActivityIndicator, MD2Colors, Avatar,Divider, Button, Card, Text } from "react-native-paper"
-
+import Icon from 'react-native-vector-icons/FontAwesome';
+import FBICON from 'react-native-vector-icons/AntDesign'
 function CardData() {
 
     let [productData, setproductData] = useState([])
@@ -23,9 +24,11 @@ function CardData() {
     }
     return (
         <View style={{ flex: 1 }}>
-            <Avatar.Text size={100} label="XD" />
-            <Divider  theme={{ colors:  'green' } } />
-          
+            <Avatar.Text size={100} label="XD"  />
+             <Avatar.Icon size={24} icon="home" />
+            <Divider  theme={{ colors:  'green' } }/>
+            <Icon name="search-plus" size={100} color="#900" />
+            <FBICON name="search1" size={100} color="#900" />
             <Text style={styles.text}>LIST DATA </Text>
             {
                 productData.length == 0 ?

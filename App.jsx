@@ -1,81 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet, FlatList, ScrollView } from "react-native";
 import CardData from "./screen/Card";
+import ImageSlider from "./screen/imageSlider";
+import LoginScreen from "./screen/LoginScreen";
 
-const Data = [
-  {
-    id: "1",
-    name: "Class 3"
-  },
-  {
-    id: "2",
-    name: "Class 4"
-  },
-  {
-    id: "3",
-    name: "Class 5"
-  },
-  {
-    id: "1",
-    name: "Class 3"
-  },
-  {
-    id: "2",
-    name: "Class 4"
-  },
-  {
-    id: "3",
-    name: "Class 5"
-  },
-  {
-    id: "1",
-    name: "Class 3"
-  },
-  {
-    id: "2",
-    name: "Class 4"
-  },
-  {
-    id: "3",
-    name: "Class 5"
-  },
-  {
-    id: "1",
-    name: "Class 3"
-  },
-  {
-    id: "2",
-    name: "Class 4"
-  },
-  {
-    id: "3",
-    name: "Class 5"
-  },
-  {
-    id: "1",
-    name: "Class 3"
-  },
-  {
-    id: "2",
-    name: "Class 4"
-  },
-  {
-    id: "3",
-    name: "Class 5"
-  },
-  {
-    id: "1",
-    name: "Class 3"
-  },
-  {
-    id: "2",
-    name: "Class 4"
-  },
-  {
-    id: "3",
-    name: "Class 5"
-  }
-]
+
+
 
 const Item = ({ title }) => (
   <View style={styles.item}>
@@ -95,7 +25,9 @@ function App() {
 
         /> */}
 
-        <CardData />
+        {/* <CardData /> */}
+        {/* <ImageSlider /> */}
+        <LoginScreen/>
       </View>
     // </ScrollView>
 
