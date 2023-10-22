@@ -1,7 +1,7 @@
 import axios from "axios"
 import React, { useEffect, useState } from 'react'
 import { View, FlatList, StyleSheet } from 'react-native'
-import { ActivityIndicator, MD2Colors, Avatar,Divider, Button, Card, Text } from "react-native-paper"
+import { ActivityIndicator, MD2Colors, Avatar, Divider, Button, Card, Text } from "react-native-paper"
 import Icon from 'react-native-vector-icons/FontAwesome';
 import FBICON from 'react-native-vector-icons/AntDesign'
 function CardData() {
@@ -24,9 +24,9 @@ function CardData() {
     }
     return (
         <View style={{ flex: 1 }}>
-            <Avatar.Text size={100} label="XD"  />
-             <Avatar.Icon size={24} icon="home" />
-            <Divider  theme={{ colors:  'green' } }/>
+            <Avatar.Text size={100} label="XD" />
+            <Avatar.Icon size={24} icon="home" />
+            <Divider theme={{ colors: 'green' }} />
             <Icon name="search-plus" size={100} color="#900" />
             <FBICON name="search1" size={100} color="#900" />
             <Text style={styles.text}>LIST DATA </Text>
@@ -42,8 +42,8 @@ function CardData() {
                             <Card>
                                 <Card.Title title={item.title} subtitle="Card Subtitle" />
                                 <Card.Content>
-                                <Avatar.Image size={100} source={{ uri: item.image }} />
-                                <Text variant="bodyMedium">{item.description}</Text>
+                                    <Avatar.Image size={100} source={{ uri: item.image }} />
+                                    <Text variant="bodyMedium">{item.description}</Text>
                                 </Card.Content>
                                 <Card.Cover source={{ uri: item.image }} />
                                 <Card.Actions>

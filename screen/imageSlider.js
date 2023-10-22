@@ -25,8 +25,8 @@ export default class extends Component {
                                 width: 12,
                                 height: 12,
                                 borderRadius: 8,
-                                margin:3
-                               
+                                margin: 3
+
                             }}
                         />
                     }
@@ -41,8 +41,8 @@ export default class extends Component {
                             }}
                         />
                     }
-                   autoplay={true}
-                   autoplayTimeout={5}
+                    autoplay={true}
+                    autoplayTimeout={5}
                 >
                     {
                         images.map((v, i) => {
