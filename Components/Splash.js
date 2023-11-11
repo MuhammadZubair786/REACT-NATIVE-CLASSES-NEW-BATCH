@@ -1,14 +1,33 @@
 import React, { useEffect } from "react";
-import {View,Text} from "react-native"
+import { View, Text } from "react-native"
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-function Splash({navigation}){
+function Splash({ navigation }) {
 
-    useEffect(()=>{
-        setTimeout(()=>{
+    useEffect(() => {
+
+       
+
+
+
+        setTimeout(async () => {
+          let  data =await   AsyncStorage.getItem("user")
+          console.log(data)
+          if(data=="true"){
+
             navigation.replace("signup")
-        },3000)
-    },[])
-    return(
+
+          }
+          else{
+            await  AsyncStorage.setItem("user","true")
+            navigation.replace("appintro")
+          }
+
+
+        
+        }, 3000)
+    }, [])
+    return (
         <View>
             <Text>sPALSH sCREEN</Text>
         </View>

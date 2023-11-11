@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Agbalumo-Regular.ttf",
+      "sha1": "b0670b6c5fab78a1f8096936516c010a3134aa1b"
+    },
+    {
+      "path": "assets/fonts/Oi-Regular.ttf",
+      "sha1": "edfc6ceb07d7672976e3f217db3c78adf18e74bd"
+    }
+  ]
+}

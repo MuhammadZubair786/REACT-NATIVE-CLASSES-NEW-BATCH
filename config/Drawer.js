@@ -8,7 +8,11 @@ const Drawer = createDrawerNavigator();
 function MyDrawer() {
     return (
       <Drawer.Navigator>
-        <Drawer.Screen name="HOME" component={Home} />
+        <Drawer.Screen name="HOME"
+        options={{
+          headerShown:false
+        }}
+        component={Home} />
         <Drawer.Screen name="Sigin" component={SignUp} />
       </Drawer.Navigator>
     );
