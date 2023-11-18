@@ -62,6 +62,15 @@ const App = ({ navigation }) => {
             activeDotStyle={{
                 backgroundColor: "white"
             }}
+            renderDoneButton={() =>
+                <TouchableOpacity onPress={() => navigation.navigate("drawer")}>
+                    <View style={styles.skipButton} >
+                        <Text style={styles.skipButtonText}>DONE</Text>
+                    </View>
+                </TouchableOpacity>
+
+            }
+
             renderSkipButton={() =>
                 <TouchableOpacity onPress={() => navigation.navigate("drawer")}>
                     <View style={styles.skipButton} >

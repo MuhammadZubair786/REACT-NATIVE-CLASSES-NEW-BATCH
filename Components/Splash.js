@@ -6,8 +6,7 @@ function Splash({ navigation }) {
 
     useEffect(() => {
 
-       
-
+    
 
 
         setTimeout(async () => {

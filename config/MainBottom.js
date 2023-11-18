@@ -5,13 +5,15 @@ import {
   StyleSheet,
   TouchableOpacity,
   View,
+    Text
 } from 'react-native';
 import { CurvedBottomBarExpo } from 'react-native-curved-bottom-bar';
 import Ionicons from 'react-native-vector-icons/AntDesign';
+import Screen from '../Components/Screen1';
 
 
 const Screen1 = () => {
-  return <View style={styles.screen1} />;
+  return <Screen />
 };
 
 const Screen2 = () => {
@@ -88,7 +90,7 @@ export default function CustomBar() {
         <CurvedBottomBarExpo.Screen
           name="title3"
           position="LEFT"
-          component={() => <Screen1 />}
+          component={() => <Screen2 />}
         />
          <CurvedBottomBarExpo.Screen
           name="title4"
